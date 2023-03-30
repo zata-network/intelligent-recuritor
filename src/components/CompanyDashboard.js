@@ -1,15 +1,47 @@
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import React, { useState } from 'react';
+import './CompanyDashboard.css';
 
 function CompanyDashboard() {
-  // Here, you'll implement the necessary state and functions to manage companies, positions, and skill sets.
-  // You'll also create the chat interface for interacting with the intelligent recruiter.
+  const [inputText, setInputText] = useState('');
+
+  const handleConfirm = () => {
+    // Handle the "Confirm" button click, e.g., send inputText to the backend or process it further.
+    console.log('Confirmed:', inputText);
+  };
+
+  const handleCancel = () => {
+    setInputText(''); // Reset the text input
+  };
 
   return (
-    <div>
-      <h1>Company Dashboard</h1>
-      {/* Render the necessary components and forms for managing companies, positions, and skill sets here. */}
-      {/* Render the chat interface for interacting with the intelligent recruiter here. */}
-    </div>
+    <Container className="dashboard-container">
+      <Row>
+        <Col md={{ span: 6, offset: 3 }}>
+          <div className="dashboard-form">
+            <h2>Company Dashboard</h2>
+            <Form>
+              <Form.Group controlId="formTextInput">
+                <Form.Label>Enter the Job Info Here:</Form.Label>
+                <Form.Control
+                  className="half-width"
+                  as="textarea" // Use a textarea instead of a single line input
+                  rows={4} // Adjust the number of rows displayed
+                  value={inputText}
+                  onChange={(e) => setInputText(e.target.value)}
+                />
+              </Form.Group>
+              <Button variant="primary" onClick={handleConfirm}>
+                Confirm
+              </Button>{' '}
+              <Button variant="secondary" onClick={handleCancel}>
+                Cancel
+              </Button>
+            </Form>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

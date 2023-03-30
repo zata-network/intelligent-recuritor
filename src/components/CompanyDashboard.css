@@ -1,0 +1,22 @@
+.dashboard-container {
+    margin-top: 40px;
+  }
+  
+  .dashboard-form {
+    background-color: #f1faee;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-form button {
+    margin-top: 20px;
+  }
+  
+  .dashboard-form .half-width {
+    width: 50%;
+  }
