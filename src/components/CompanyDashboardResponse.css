@@ -1,0 +1,17 @@
+.gpt-response {
+    background-color: rgba(144, 238, 144, 0.3); /* 浅绿色背景 */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* 居中对齐文本 */
+  }
+  
+  .gpt-response h3 {
+    font-size: 24px; /* 标题字体大小 */
+    margin-bottom: 10px;
+  }
+  
+  .gpt-response p {
+    font-size: 18px; /* 正文字体大小 */
+    line-height: 1.5;
+  }
+  

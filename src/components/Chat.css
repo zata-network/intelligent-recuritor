@@ -1,0 +1,74 @@
+  
+  .chat-container {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff; /* Add this to make the chat container background white */
+    border-radius: 5px; /* Add this to round the corners of the chat container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add this to give the chat container a subtle shadow */
+  }
+  
+  .chat-messages {
+    height: 70vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+  }
+  
+  .chat-message {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .user-message {
+    align-self: flex-end;
+    background-color: #1a8cff;
+    color: #fff;
+  }
+  
+  .gpt-message {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .chat-input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 50%; /* Add this to make the input form take up half of the width */
+    margin-left: auto; /* Add this to center the input form */
+    margin-right: auto; /* Add this to center the input form */
+  }
+  
+  .chat-input-form textarea {
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    height: 80px; /* Add this to make the textarea higher */
+  }
+
+  .send-message-btn {
+    align-self: flex-end;
+    background-color: #1a8cff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .send-message-btn:hover {
+    background-color: #1576d4;
+  }
+  
